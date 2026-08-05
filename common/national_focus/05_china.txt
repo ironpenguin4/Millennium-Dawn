@@ -5309,8 +5309,11 @@ focus_tree = {
 				technology = gen_5_large
 			}
 			newline = yes
-			sp:sp_stealth_technology = {
-				add_project_progress_ratio = 0.35
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				sp:sp_stealth_technology = {
+					add_project_progress_ratio = 0.35
+				}
 			}
 		}
 
